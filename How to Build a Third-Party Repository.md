@@ -1,5 +1,7 @@
 # How to Build a Third-Party Repository
 [中文](https://github.com/yokodev-pro/PrecisEQ-Pro/blob/main/如何构建第三方仓库.md)
+## Build Requirements
+A static server with an HTTPS domain name.
 ## Calibration Files
 Currently, the client only supports FIR, with the following format requirements:
 - The sampling format must use **32 bits IEEE Stereo** (.wav). Ensure minimum phase is used, and use the same calibration to generate four sample-rate versions: 44, 48, 96, and 192.
