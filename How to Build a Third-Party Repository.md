@@ -1,7 +1,7 @@
 # How to Build a Third-Party Repository
 ## Calibration Files
 Currently, the client only supports FIR, with the following format requirements:
-- The sampling format must use **32 bits IEEE Stereo** (.wav). Ensure minimum phase is used, and use the same calibration to generate four sample-rate versions: **44, 48, 96, and 192**.
+- The sampling format must use **32 bits IEEE Stereo** (.wav). Ensure minimum phase is used, and use the same calibration to generate four sample-rate versions: 44, 48, 96, and 192.
 - The frequency response after calibration must be a horizontally flat curve; the target curve actually used will be restored on the client via EQ.
 - All calibration files must be set with a **-12 dB** pre-gain.
 - For measurement artificial ears, **B&K 4195** (in-ear) and **GRAS RA0045+KB0060** (over-ear) are recommended, or compensate to an approximate equivalent.
