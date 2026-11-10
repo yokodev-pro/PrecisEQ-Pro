@@ -1,8 +1,16 @@
+<div align="right">
+  <b>Language / 语言:</b> 
+  <a href="#chinese">🇨🇳 中文版</a> | 
+  <a href="#english">🌐 English Version</a>
+</div>
+
+<span id="chinese"></span>
+
 # 用户服务与许可协议
 
 **版本生效日期：** 2026年1月15日  
 **最近更新日期：** 2026年11月10日  
-**开发者/团队：** yokodev
+**开发者/团队：** yokodev  
 
 ---
 
@@ -85,3 +93,103 @@
 
 如果您对本协议有任何疑问、意见或反馈，可通过以下方式与开发者取得联系：  
 * **联系邮箱：** yokodev.pro@gmail.com
+
+---
+<br>
+
+<span id="english"></span>
+
+<div align="right">
+  <b>Language / 语言:</b> 
+  <a href="#chinese">🇨🇳 中文版</a> | 
+  <a href="#english">🌐 English Version</a>
+</div>
+
+# End User License Agreement & Terms of Service
+
+**Effective Date:** January 15, 2026  
+**Last Updated:** November 10, 2026  
+**Developer/Team:** yokodev  
+
+---
+
+### Important Notice:
+Welcome to **PrecisEQ** (hereinafter referred to as the "Application"). Before installing, downloading, or using this Application, please carefully read and thoroughly understand this End User License Agreement and Terms of Service (hereinafter referred to as the "Agreement"), particularly the provisions concerning **limitations of liability, disclaimers, user rights restrictions, and dispute jurisdiction** (highlighted in **bold** for your attention).
+
+If you are under 18 years of age, please read this Agreement in the presence of a legal guardian, paying special attention to provisions regarding minors and in-app purchase restrictions.
+
+---
+
+### Article 1 Software Functionality & License Scope
+
+1. **Software Description**: This Application is a professional digital signal processing (DSP) and audio equalization tool developed specifically for Android devices.
+2. **Technical Architecture & Permissions**:
+   * This Application utilizes the Android system's `AudioPlaybackCapture` API and `MediaProjection` foreground service to capture and route system audio playback. **Notice: The MediaProjection permission is strictly requested solely to acquire audio capture authorization from the OS. This Application DOES NOT capture, record, store, or transmit any screen images, screen captures, or video displays.**
+3. **Third-Party Tool (Shizuku) Support**:
+   * Certain advanced routing features may require or integrate with the third-party utility Shizuku. Users decide independently whether to install and authorize Shizuku.
+   * **This Application and its developer are not affiliated with Shizuku developers. The developer assumes no liability for the stability, security, OS compatibility, or system abnormalities caused by third-party utilities.**
+
+---
+
+### Article 2 Pro Edition & In-App Purchases
+
+1. **Purchases and Entitlements**: The Application offers an optional Pro Edition. Payments are processed securely via verified third-party payment platforms. Entitlements are bound to the purchaser's authenticated payment account.
+2. **Trial Mechanism & Restoring Purchases**:
+   * Free-tier users are granted a trial mechanism for DSP features (processing temporarily suspends after the trial interval and can be re-enabled manually).
+   * Pro Edition unlocks full, uninterrupted access. If Pro status is lost due to device replacement, factory reset, or reinstallation, users may retrieve it via the "Restore Purchases" feature using the original payment account.
+3. **Non-Refundable Digital Goods Policy**: **The Pro Edition constitutes a virtual digital content and software service. Once payment is confirmed and the license is activated, no refund requests will be accepted unless required by mandatory statutory consumer protection laws or in cases of irreversible entitlement failure directly caused by verified defects in the Application.**
+4. **License Restrictions & Anti-Piracy**: Obtaining or distributing Pro entitlements via reverse engineering, cracking, patched APKs, fraudulent orders, or unauthorized resale is strictly prohibited. The developer reserves the right to terminate or permanently ban fraudulent licenses without prior notice.
+
+---
+
+### Article 3 User Conduct & Content Standards
+
+1. **Custom Configuration Standards**: When naming or sharing customized EQ presets, impulse response profiles, or configurations, users shall not input or distribute any unlawful, offensive, defamatory, infringing, or harmful content.
+2. **Preset Sharing & QR Codes**:
+   * The Application supports exporting frequency response configurations via QR codes or text strings for community sharing. Such sharing is entirely voluntary.
+   * **Any disputes, copyright infringements, or device malfunctions arising from public sharing of configurations across social platforms are the sole responsibility of the user. The developer does not review, store, or endorse user-generated presets.**
+3. **Prohibition of Reverse Engineering**: Without express written consent from the developer, users shall not decompile, reverse engineer, disassemble, decrypt, or attempt to extract the source code, DSP algorithms, or proprietary assets of the Application.
+
+---
+
+### Article 4 Privacy Protection & Network Behavior
+
+1. **100% Local On-Device Audio Processing**: **All digital signal processing, equalization, convolution, and spatial audio filtering are performed strictly in real-time on your local device. The Application NEVER records, caches, transmits, or analyzes any user audio streams, microphones, voice calls, or private audio data.**
+2. **Limited Network Communications**: Network requests are strictly limited to the following essential scenarios:
+   * Validating order purchase tokens and activating Pro entitlements;
+   * Fetching and updating publicly available headphone/target compensation curves from verified remote repositories;
+   * Performing essential application update checks and critical crash error logging.
+3. **Privacy Policy**: For full details regarding data practices and system permission handling, please review our [Privacy Policy](#english), which carries equal legal validity with this Agreement.
+
+---
+
+### Article 5 Disclaimers (Crucial)
+
+1. **Hardware Safety Disclaimer**: **DSP audio processing involves gain boosts, preamplification adjustments, and equalization filters. Applying excessive gain, clipping levels, or improper ultra-low/ultra-high frequency boosts may cause hardware speaker/earphone diaphragm rupture or physical transducer damage. Users must exercise sound technical judgment and regulate output levels. The developer disclaims all liability for any physical damage to headphones, speakers, or external playback equipment resulting from improper parameter settings.**
+2. **Hearing Health Disclaimer**: **Prolonged listening at excessive sound pressure levels (high volume) causes irreversible sensorineural hearing loss and tinnitus. Users are solely responsible for monitoring playback volume and duration. The developer bears no legal liability for any hearing damage, tinnitus, or medical issues arising from software usage.**
+3. **Compatibility & OEM Variations**: The Android ecosystem is subject to extensive hardware and custom ROM fragmentation. Different manufacturers employ divergent background process killers, custom battery optimizations, and proprietary audio routing pipelines. The developer cannot guarantee seamless compatibility across every device model, OS release, or third-party media player. Audio interruptions caused by OEM task killers do not constitute a defect or breach of service.
+
+---
+
+### Article 6 Protection of Minors
+
+1. Minors using this Application must do so under parental supervision and maintain moderate listening volumes to safeguard auditory health.
+2. Minors must obtain express consent from their legal guardian prior to initiating in-app purchases or upgrading to the Pro Edition.
+
+---
+
+### Article 7 Amendments, Termination & Governing Law
+
+1. **Amendments**: The developer reserves the right to modify this Agreement in response to legal updates, technical adjustments, or operational needs. Updated terms take effect immediately upon publication within the Application or official repository. Continued use signifies acceptance of the amended terms.
+2. **Termination**: In the event of material breach of this Agreement, the developer reserves the right to revoke user access and cancel Pro entitlements.
+3. **Governing Law & Dispute Resolution**:
+   * The validity, interpretation, execution, and dispute resolution of this Agreement shall be governed by the **laws of the People's Republic of China** (excluding conflict-of-law principles).
+   * Any disputes arising from this Agreement shall first be resolved through good-faith negotiation. If negotiation fails, disputes shall be submitted to the **people's court with jurisdiction over the developer's registered location**.
+4. **Governing Language**: This Agreement is drafted in Chinese and translated into English. In the event of any discrepancies or ambiguities between the Chinese and English versions, the **Chinese version shall prevail**.
+
+---
+
+### Article 8 Contact Information
+
+If you have questions, feedback, or inquiries regarding this Agreement, please contact:  
+* **Email:** yokodev.pro@gmail.com

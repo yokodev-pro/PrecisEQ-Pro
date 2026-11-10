@@ -1,3 +1,11 @@
+<div align="right">
+  <b>Language / 语言:</b> 
+  <a href="#chinese">🇨🇳 中文版</a> | 
+  <a href="#english">🌐 English Version</a>
+</div>
+
+<span id="chinese"></span>
+
 # 隐私政策
 
 **版本生效日期：** 2025年12月9日  
@@ -87,3 +95,110 @@ PrecisEQ 是一款由 yokodev 独立研发的音频数字信号处理（DSP）�
 
 * **联系邮箱：** yokodev.pro@gmail.com  
 * **响应时限：** 我们将在收到您的邮件并在验证身份后的 15 个工作日内给予答复与处理。
+
+---
+<br>
+
+<span id="english"></span>
+
+<div align="right">
+  <b>Language / 语言:</b> 
+  <a href="#chinese">🇨🇳 中文版</a> | 
+  <a href="#english">🌐 English Version</a>
+</div>
+
+# Privacy Policy
+
+**Effective Date:** December 9, 2025  
+**Last Updated:** November 10, 2026  
+**Developer/Operator:** yokodev ("we", "us", or "our")  
+**Contact Email:** yokodev.pro@gmail.com  
+
+---
+
+### Introduction
+PrecisEQ is a professional digital signal processing (DSP) and audio equalization tool independently engineered by yokodev. We understand the paramount importance of your personal information and are committed to safeguarding your privacy.
+
+**【SPECIAL NOTICE】**  
+1. **100% Local On-Device Audio DSP Processing**: All audio equalization, convolution filters, and spatial acoustic processing are executed strictly on your local device in real-time. This Application NEVER records environmental audio, NEVER caches audio recordings locally, and NEVER uploads or streams your audio or call content.  
+2. **No Mandatory Account Registration**: The Application requires no sign-up or user account, and does not collect sensitive personally identifiable information such as legal names, national ID numbers, contacts, or precise GPS locations.
+
+Please read and understand this Privacy Policy before utilizing our services. Using or continuing to use the Application constitutes your acceptance of the data handling practices outlined herein.
+
+---
+
+### 1. Information Collection and Usage
+
+To deliver stable and reliable audio enhancement capabilities, we collect and process information only within a legitimate, lawful, and necessary scope:
+
+#### 1.1 Audio Processing & Sensitive System Permissions (Important)
+* **Audio Recording Permission (`RECORD_AUDIO`)**: Requested strictly to capture internal digital audio playback from media apps via standard Android OS routing APIs. **The Application NEVER activates the hardware microphone for ambient recording, nor does it record, store, or transmit your voice or sound data.**
+* **Media Projection Permission (`MediaProjection`)**: Required in select operational modes to acquire audio loopback authorization from the OS via a foreground service. **Solemn Statement: The Application strictly uses this service for audio capture authorization only. It NEVER screenshots, records, stores, or uploads your screen graphics, display contents, or user interactions.**
+* **Notification Permission (`POST_NOTIFICATIONS`)**: Used to display the ongoing real-time operational status and quick controls of the foreground audio processing service in your system notification drawer.
+
+#### 1.2 Crash Diagnostics & Basic Device Telemetry
+* To diagnose system crashes and enhance DSP engine stability, we collect anonymized technical logs via reputable third-party analytics (including device model, OS version, package version, and crash stack traces). This data cannot be utilized to identify any specific individual.
+
+#### 1.3 In-App Purchases & Order Tokens
+* When upgrading to the Pro Edition, payments are handled directly by authenticated payment gateways. We verify only the **Order ID and payment completion status** returned by payment providers to unlock Pro entitlements. **We neither receive nor store sensitive financial credentials such as credit card numbers or payment passwords.**
+
+#### 1.4 No Advertising Commitment
+* **The Application is completely ad-free. We do not gather advertising identifiers (e.g., GAID) and do not disclose or monetize any user data with ad brokers or marketing networks.**
+
+---
+
+### 2. Third-Party SDK Integrations & Data Sharing
+
+To facilitate secure transactions and crash diagnostics, we integrate trusted third-party SDKs. The SDK directory and their respective data practices are detailed below:
+
+| SDK Name | Provider | Purpose | Data Processed | Privacy Policy / Official Documentation |
+| :--- | :--- | :--- | :--- | :--- |
+| **Alipay Client SDK**<br>*(Domestic Distribution)* | Ant Group Co., Ltd. | Secure payment processing and order status verification | Device model, MAC address, network state, BSSID/SSID, system parameters (for anti-fraud risk control) | [Alipay Privacy Policy](https://opendocs.alipay.com/open/54/01g6qm) |
+| **Google Play Billing**<br>*(Google Play Distribution)* | Google LLC | Global in-app purchases and license restoration | Purchase token, Order ID, anonymized Google account identifier | [Google Privacy Policy](https://policies.google.com/privacy) |
+| **Firebase Analytics** | Google LLC | Crash stack diagnostics and application stability analysis | Anonymous instance ID, crash stack traces, OS release | [Firebase Privacy Policy](https://firebase.google.com/support/privacy) |
+
+Apart from the indispensable SDKs listed above for payment and crash analytics, **we do not sell, share, transfer, or publicly disclose personal data to any external parties.**
+
+---
+
+### 3. Data Storage & Security Measures
+
+1. **Storage Location**: Data collected within the operational scope in Mainland China is hosted domestically. For crash diagnostics handled via Google Firebase, de-identified diagnostics logs may be processed across secure Google server infrastructure globally.
+2. **Retention Period**: We retain information only for the minimum duration strictly necessary to fulfill the service objectives (e.g., active purchase tokens are maintained throughout the service lifecycle).
+3. **Security Protection**: We implement industry-standard protective safeguards, including Android app sandbox isolation and mandatory HTTPS/TLS cryptographic protocols for all remote network transmissions, ensuring protection against unauthorized interception or data breach.
+
+---
+
+### 4. Your Rights (Access, Deletion, and Revocation)
+
+1. **Permission Revocation**: You may revoke permissions (`RECORD_AUDIO`, notifications, etc.) at any time via Android "Settings > Apps > Permissions". Revoking permissions disables dependent DSP features without impacting unaffected operations.
+2. **Data Erasure**: Because the Application maintains no server-side user accounts, all EQ configurations, impulse response files, and custom presets reside exclusively in local device storage. You can permanently erase all local application state by selecting "Clear Storage / Clear Cache" in Android system settings or by uninstalling the Application.
+3. **Inquiries & Order Assistance**: If you have questions concerning purchase binding or require assistance regarding order records, please contact us via our official email. We will process and respond to verified inquiries within 15 business days.
+
+---
+
+### 5. Protection of Minors
+
+1. We place immense priority on safeguarding minors. This Application is designed for users with full civil capacity. Minors should review this policy under the supervision of a legal guardian.
+2. Minors are strictly prohibited from executing in-app purchases or Pro upgrades without prior explicit authorization from their legal guardians.
+
+---
+
+### 6. Changes to this Privacy Policy
+
+We may update this Privacy Policy periodically to reflect legal or technical changes. Material modifications will be notified via in-app prompts or version release notes. Continued use of our Application following an update signifies your acceptance of the revised terms.
+
+---
+
+### 7. Governing Language
+
+This Privacy Policy is executed in Chinese and translated into English for convenience. In the event of any discrepancies or ambiguities between the Chinese version and any translated edition, the **Chinese version shall prevail**.
+
+---
+
+### 8. Contact Us
+
+If you have questions, feedback, or complaints regarding this Privacy Policy or personal data practices, please reach out via:
+
+* **Email:** yokodev.pro@gmail.com  
+* **Response Window:** We review and reply within 15 business days upon identity verification.
