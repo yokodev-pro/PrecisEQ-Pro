@@ -1,7 +1,7 @@
 <div align="right">
   <b>Language / 语言:</b> 
-  <a href="#chinese">🇨🇳 中文版</a> | 
-  <a href="#english">🌐 English Version</a>
+  <a href="#chinese"> 中文</a> | 
+  <a href="#english"> English</a>
 </div>
 
 <span id="chinese"></span>
@@ -10,8 +10,7 @@
 
 **版本生效日期：** 2025年12月9日  
 **最近更新日期：** 2026年11月10日  
-**开发者/运营者：** yokodev（以下简称“我们”）  
-**联系邮箱：** yokodev.pro@gmail.com  
+**开发者：** yokodev（以下简称“我们”）
 
 ---
 
@@ -103,16 +102,15 @@ PrecisEQ 是一款由 yokodev 独立研发的音频数字信号处理（DSP）�
 
 <div align="right">
   <b>Language / 语言:</b> 
-  <a href="#chinese">🇨🇳 中文版</a> | 
-  <a href="#english">🌐 English Version</a>
+  <a href="#chinese"> 中文</a> | 
+  <a href="#english"> English</a>
 </div>
 
 # Privacy Policy
 
 **Effective Date:** December 9, 2025  
 **Last Updated:** November 10, 2026  
-**Developer/Operator:** yokodev ("we", "us", or "our")  
-**Contact Email:** yokodev.pro@gmail.com  
+**Developer:** yokodev ("we", "us", or "our") 
 
 ---
 

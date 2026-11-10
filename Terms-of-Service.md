@@ -1,7 +1,7 @@
 <div align="right">
   <b>Language / 语言:</b> 
-  <a href="#chinese">🇨🇳 中文版</a> | 
-  <a href="#english">🌐 English Version</a>
+  <a href="#chinese"> 中文</a> | 
+  <a href="#english"> English</a>
 </div>
 
 <span id="chinese"></span>
@@ -10,7 +10,7 @@
 
 **版本生效日期：** 2026年1月15日  
 **最近更新日期：** 2026年11月10日  
-**开发者/团队：** yokodev  
+**开发者：** yokodev  
 
 ---
 
@@ -101,15 +101,15 @@
 
 <div align="right">
   <b>Language / 语言:</b> 
-  <a href="#chinese">🇨🇳 中文版</a> | 
-  <a href="#english">🌐 English Version</a>
+  <a href="#chinese"> 中文版</a> | 
+  <a href="#english"> English</a>
 </div>
 
 # End User License Agreement & Terms of Service
 
 **Effective Date:** January 15, 2026  
 **Last Updated:** November 10, 2026  
-**Developer/Team:** yokodev  
+**Developer:** yokodev  
 
 ---
 
