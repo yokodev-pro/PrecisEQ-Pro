@@ -9,7 +9,7 @@
 # 隐私政策
 
 **版本生效日期：** 2025年12月9日  
-**最近更新日期：** 2026年11月10日  
+**最近更新日期：** 2026年11月11日  
 **开发者：** yokodev（以下简称“我们”）
 
 ---
@@ -29,49 +29,54 @@ PrecisEQ 是一款由 yokodev 独立研发的音频数字信号处理（DSP）�
 
 为了向您提供稳定的音频增强服务，我们仅在以下合法、正当、必要的范围内收集和使用信息：
 
-#### 1.1 音频处理与敏感系统权限说明（重要）
-* **录制音频权限（RECORD_AUDIO）**：仅用于通过系统底层接口捕获其他正在播放音频的应用的本地数字音频流，以便进行 DSP 均衡滤波处理。**本应用绝不会启用硬件麦克风进行环境录音，绝不录制、缓存或上传任何用户声音数据。**
-* **媒体投影权限（MediaProjection）**：部分工作模式下需要通过媒体投影前台服务获取音频捕获授权。**在此郑重声明：本应用仅利用该服务获取音频捕获通道，绝不截取、录制、存储或上传您的屏幕图像、操作轨迹或显示画面。**
-* **通知权限（POST_NOTIFICATIONS）**：用于在系统通知栏展示前台音频处理服务的实时运行状态与快捷控制开关。
+#### 1.1 音频处理与系统权限说明（重要）
+* **录制音频权限（`RECORD_AUDIO`）**：仅用于通过系统底层接口捕获其他正在播放音频的应用的本地数字音频流，以便进行 DSP 均衡滤波处理。**本应用绝不会启用硬件麦克风进行环境录音，绝不录制、缓存或上传任何用户声音数据。**
+* **媒体投影权限（`MediaProjection`）**：部分工作模式下需要通过媒体投影前台服务获取音频捕获授权。**在此郑重声明：本应用仅利用该服务获取音频捕获通道，绝不截取、录制、存储或上传您的屏幕图像、操作轨迹或显示画面。**
+* **通知权限（`POST_NOTIFICATIONS`）**：用于在系统通知栏展示前台音频处理服务的实时运行状态。
+* **获取 Wi-Fi 与网络状态权限（`ACCESS_WIFI_STATE` / `ACCESS_NETWORK_STATE`）**：仅在官方分发渠道接入支付宝客户端 SDK 时，由支付风控模块用于判断网络连通性及执行交易反欺诈校验，**绝不用于物理位置定位或周边热点数收集**。
+* **特定应用安装状态检测**：本应用仅在本地检测特定辅助工具（Shizuku，用于高阶音频路由模式）或官方渠道支付客户端（支付宝）是否已安装，以便正常拉起对应工作模式或支付界面，**绝不读取、收集或上传您设备上的完整软件安装列表**。
 
-#### 1.2 崩溃统计与基础设备信息
-* 为排查应用崩溃问题、提升音频引擎稳定性，我们会通过第三方统计工具收集匿名化的设备信息（包括设备型号、操作系统版本、应用包名及版本、崩溃堆栈日志）。此类信息无法识别特定自然人身份。
+#### 1.2 应用数据统计与基础运行环境信息
+* 为分析应用功能使用情况与不同设备环境下的兼容性，在您明确同意本政策后，我们会通过第三方统计工具（Firebase Analytics）收集 **`Android_ID`**、应用实例标识、设备型号、操作系统版本、应用包名及版本号，以及**去标识化的应用内操作计数事件**（包括页面访问、DSP 功能使用时长心跳、免费/高级版用户状态及自定义配置导入、分享操作的触发次数）。**上述统计绝不采集您的音频流、自定义 EQ/校准参数内容，亦不会收集或上报分享去向的第三方应用名称或包名。**
+* 当您正常使用相关功能时，本应用还会执行有限的公开资源网络访问：从指定的公开在线仓库拉取/更新耳机校准曲线列表。
 
-#### 1.3 支付与订单信息
-* 当您购买高级版时，支付流程通过第三方支付渠道完成。我们仅会记录并校验支付服务商返回的**订单流水号（Order ID）与支付状态**，用于激活并向您提供高级版功能。**我们不会也无法获取您的银行卡号、支付密码等任何敏感金融信息。**
+#### 1.3 支付、订单校验与账号授权信息
+* 当您购买高级版、恢复购买或核销兑换码时，交易由第三方支付渠道及开发者自有订单校验服务器协同完成。我们会记录并校验**订单流水号（Order ID）与支付状态**以激活并维持您的高级版权益。
+* 在官方分发渠道（支付宝）使用“恢复购买”或“兑换码核销”功能时，在您手动确认后，本应用会调起支付宝授权登录获取临时 **`auth_code`（授权码）** 并发送至校验服务器，用于识别与绑定您的支付宝账号关联的历史权益记录。**我们不会也无法获取您的银行卡号、支付密码等任何敏感金融信息。**
 
 #### 1.4 无广告业务承诺
-* **本应用不包含任何商业广告业务，不收集广告标识符，亦不会因广告目的向任何广告主或营销机构共享您的信息。**
+* **本应用不包含任何商业广告业务，已明确禁用广告标识符（如 AD_ID/GAID）及广告归因权限采集，亦不会因广告目的向任何广告主或营销机构共享您的信息。**
 
 ---
 
 ### 2. 第三方 SDK 目录及数据共享说明
 
-为了保障本应用特定功能的实现，我们会接入由具备资质的第三方提供的 SDK。接入的 SDK 清单及数据处理规则如下：
+为了保障本应用特定功能的实现，我们会接入由具备资质的第三方提供的 SDK。接入的 SDK 清单、收集的个人信息及使用规则如下：
 
-| SDK 名称 | 所属机构 | 使用目的 | 收集的数据类型 | 官网/隐私政策链接 |
-| :--- | :--- | :--- | :--- | :--- |
-| **支付宝客户端 SDK**<br>*(官方分发渠道)* | 蚂蚁科技集团股份有限公司 | 提供高级版安全支付能力，校验订单结果 | 设备型号、MAC 地址、网络状态、BSSID/SSID、系统参数（用于支付风控） | [支付宝隐私政策](https://opendocs.alipay.com/open/54/01g6qm) |
-| **Google Play Billing**<br>*(仅限 Google Play 渠道)* | Google LLC | 提供海外应用内购买及恢复购买服务 | 购买凭证、订单号、Google 账户匿名标识 | [Google 隐私政策](https://policies.google.com/privacy) |
-| **Firebase Analytics** | Google LLC | 收集匿名异常崩溃日志，分析应用稳定性 | 匿名设备标识、崩溃堆栈信息、操作系统版本 | [Firebase 隐私政策](https://firebase.google.com/support/privacy) |
+| SDK 名称 | 所属机构 | 使用目的 | 使用场景 | 共享方式 | 收集的个人信息类型 | 官网/隐私政策链接 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **支付宝客户端 SDK**<br>*(官方分发渠道)* | 蚂蚁科技集团股份有限公司 | 提供高级版安全支付、支付宝账号授权登录（恢复购买/核销兑换码）及支付交易反欺诈风控 | 用户点击购买、恢复购买、核销兑换码，以及同意隐私政策后校验支付环境时 | SDK 本机采集 | **`Android_ID`**、**`传感器信息`**（设备传感器列表与运动等传感器数据）、设备型号、操作系统参数、网络状态、Wi-Fi 状态（BSSID/SSID）、MAC 地址、特定支付应用安装状态 | [支付宝隐私政策](https://opendocs.alipay.com/open/54/01g6qm) |
+| **Google Play Billing**<br>*(仅限 Google Play 渠道)* | Google LLC | 提供海外应用内购买、订单校验及恢复购买服务 | 用户点击购买或同步 Google Play 权益状态时 | SDK 本机采集并通信 | 购买凭证、订单号、Google 账户匿名标识 | [Google 隐私政策](https://policies.google.com/privacy) |
+| **Firebase Analytics** | Google LLC | 统计应用页面访问、功能使用情况、付费状态分布及配置导入/分享次数，分析运行环境兼容性 | 用户明确同意本政策后的应用启动及前台使用过程中 | SDK 本机采集并传输 | **`Android_ID`**、应用实例标识、设备型号、操作系统版本、应用版本号、去标识化的应用内操作计数事件（不含音频数据及第三方应用包名） | [Firebase 隐私政策](https://firebase.google.com/support/privacy) |
 
-除上述因实现支付、崩溃统计所必需的第三方 SDK 外，我们**不会主动将您的个人信息共享、转让或公开披露给任何第三方**。
+除上述因实现支付与统计所必需的第三方 SDK 及开发者自有订单校验服务外，我们**不会主动将您的个人信息出售、共享、转让或公开披露给任何无关第三方**。
 
 ---
 
 ### 3. 信息的存储与安全
 
-1. **存储地点**：我们在中华人民共和国境内运营中收集的信息，原则上存储于中国境内。因使用 Google Firebase 进行崩溃统计分析，部分去标识化的系统日志可能传输至境外 Google 服务器进行计算处理。
+1. **存储地点与跨境传输说明**：我们在中华人民共和国境内运营中收集的订单校验凭证存储于对应服务端。因使用 Google LLC 提供的 Firebase Analytics 进行应用运行统计，**去标识化的应用内统计事件、设备基础型号、操作系统版本以及 `Android_ID` / 应用实例标识将通过 HTTPS/TLS 加密传输至位于境外的 Google LLC 服务器**进行统计分析（我们已禁用广告标识符采集）。如您不同意或后续撤回同意，上述数据收集与传输将立即停止。
 2. **存储期限**：我们仅在实现服务目的所必需的最短期限内保留信息（如高级版订单凭据在提供服务期间持续保留）。
 3. **安全防护**：我们采用业界通行的安全防护标准（包括本地数据沙盒隔离、数据传输 HTTPS 加密等）保障信息安全，防止未经授权的访问、泄露或篡改。
 
 ---
 
-### 4. 您的权利（查询、更新、数据撤回与注销）
+### 4. 您的权利（查询、撤回同意、数据清除与注销）
 
-1. **权限撤回**：您可以随时在 Android 系统“设置 - 应用权限管理”中关闭录音、通知等授权。关闭后相应功能将停止，但不影响其他独立功能使用。
-2. **数据清除**：由于本应用不设用户注册体系，所有均衡器配置、自定曲线数据均存储于本地。您可通过 Android 系统“应用管理 - 清除数据/清除缓存”或直接卸载本应用来彻底删除所有本地数据。
-3. **退订与客服响应**：如您对已绑定的订单有任何疑问或需要协助注销相关订单记录，可通过本政策公布的邮箱与我们联系，我们将在 15 个工作日内予以核查并答复。
+1. **随时查看与撤回同意**：在您同意本政策进入应用后，仍可随时在主界面底部点击《协议与政策》再次查阅全文，并可通过“**撤回授权**”按钮随时撤回您的授权同意；确认撤回后，本应用将立即停止统计采集与相关服务运行，并退回协议确认界面。
+2. **权限撤回**：您可以随时在 Android 系统“设置 - 应用权限管理”中关闭录音、通知等授权。关闭后相应功能将停止，但不影响其他独立功能使用。
+3. **数据清除**：由于本应用不设用户注册体系，所有均衡器配置、自定曲线数据均存储于本地。您可通过 Android 系统“应用管理 - 清除数据/清除缓存”或直接卸载本应用来彻底删除所有本地数据。
+4. **退订与客服响应**：如您对已绑定的订单有任何疑问或需要协助注销相关订单记录，可通过本政策公布的邮箱与我们联系，我们将在 15 个工作日内予以核查并答复。
 
 ---
 
@@ -109,7 +114,7 @@ PrecisEQ 是一款由 yokodev 独立研发的音频数字信号处理（DSP）�
 # Privacy Policy
 
 **Effective Date:** December 9, 2025  
-**Last Updated:** November 10, 2026  
+**Last Updated:** November 11, 2026  
 **Developer:** yokodev ("we", "us", or "our") 
 
 ---
@@ -129,49 +134,54 @@ Please read and understand this Privacy Policy before utilizing our services. Us
 
 To deliver stable and reliable audio enhancement capabilities, we collect and process information only within a legitimate, lawful, and necessary scope:
 
-#### 1.1 Audio Processing & Sensitive System Permissions (Important)
+#### 1.1 Audio Processing & System Permissions (Important)
 * **Audio Recording Permission (`RECORD_AUDIO`)**: Requested strictly to capture internal digital audio playback from media apps via standard Android OS routing APIs. **The Application NEVER activates the hardware microphone for ambient recording, nor does it record, store, or transmit your voice or sound data.**
 * **Media Projection Permission (`MediaProjection`)**: Required in select operational modes to acquire audio loopback authorization from the OS via a foreground service. **Solemn Statement: The Application strictly uses this service for audio capture authorization only. It NEVER screenshots, records, stores, or uploads your screen graphics, display contents, or user interactions.**
-* **Notification Permission (`POST_NOTIFICATIONS`)**: Used to display the ongoing real-time operational status and quick controls of the foreground audio processing service in your system notification drawer.
+* **Notification Permission (`POST_NOTIFICATIONS`)**: Used to display the ongoing real-time operational status of the foreground audio processing service in your system notification drawer.
+* **Wi-Fi & Network State Permissions (`ACCESS_WIFI_STATE` / `ACCESS_NETWORK_STATE`)**: Used in the official domestic distribution solely by the Alipay Client SDK's anti-fraud risk-control module to check network connectivity and payment security; **NEVER used for geographic location tracking**.
+* **Specific App Installation Checks**: The Application only checks locally whether specific companion utilities (Shizuku for advanced audio routing) or payment apps (Alipay in the official distribution) are installed to launch the corresponding features or checkout flow. **We NEVER read, collect, or upload your complete list of installed applications.**
 
-#### 1.2 Crash Diagnostics & Basic Device Telemetry
-* To diagnose system crashes and enhance DSP engine stability, we collect anonymized technical logs via reputable third-party analytics (including device model, OS version, package version, and crash stack traces). This data cannot be utilized to identify any specific individual.
+#### 1.2 Usage Analytics & Basic Runtime Telemetry
+* To understand feature usage and verify runtime compatibility across devices, once you accept this Policy, we collect via **Firebase Analytics**: **`Android_ID`**, app instance identifiers, device model, OS version, app package name and version, and **de-identified in-app interaction counts** (screen views, DSP feature heartbeat durations, Free/Pro tier status, and target curve QR import/share action counts). **We NEVER collect or upload any audio streams, custom EQ/calibration values, or the names/package names of third-party apps you choose to share to.**
+* During normal usage, the Application performs limited public network requests to fetch headphone compensation curves from designated public repositories.
 
-#### 1.3 In-App Purchases & Order Tokens
-* When upgrading to the Pro Edition, payments are handled directly by authenticated payment gateways. We verify only the **Order ID and payment completion status** returned by payment providers to unlock Pro entitlements. **We neither receive nor store sensitive financial credentials such as credit card numbers or payment passwords.**
+#### 1.3 In-App Purchases, Order Verification & Account Authorization
+* When upgrading to the Pro Edition, restoring purchases, or redeeming codes, verification is processed via authenticated payment providers and the developer's verification server. We record and validate **Order IDs and payment completion statuses** to grant and maintain Pro entitlements.
+* In the official domestic distribution (Alipay), when you actively initiate "Restore Purchases" or "Redeem Code", the Application invokes Alipay account authorization upon your confirmation to obtain a temporary **`auth_code`**, which is sent to our verification server to bind and retrieve your historical Pro entitlement records. **We neither receive nor store sensitive financial credentials such as credit card numbers or payment passwords.**
 
 #### 1.4 No Advertising Commitment
-* **The Application is completely ad-free. We do not gather advertising identifiers (e.g., GAID) and do not disclose or monetize any user data with ad brokers or marketing networks.**
+* **The Application is completely ad-free. We have explicitly disabled advertising identifiers (e.g., AD_ID/GAID) and ad-attribution permissions, and we never disclose or monetize any user data with ad brokers or marketing networks.**
 
 ---
 
 ### 2. Third-Party SDK Integrations & Data Sharing
 
-To facilitate secure transactions and crash diagnostics, we integrate trusted third-party SDKs. The SDK directory and their respective data practices are detailed below:
+To facilitate secure transactions and usage diagnostics, we integrate trusted third-party SDKs. The SDK directory, data types collected, and processing rules are detailed below:
 
-| SDK Name | Provider | Purpose | Data Processed | Privacy Policy / Official Documentation |
-| :--- | :--- | :--- | :--- | :--- |
-| **Alipay Client SDK**<br>*(Domestic Distribution)* | Ant Group Co., Ltd. | Secure payment processing and order status verification | Device model, MAC address, network state, BSSID/SSID, system parameters (for anti-fraud risk control) | [Alipay Privacy Policy](https://opendocs.alipay.com/open/54/01g6qm) |
-| **Google Play Billing**<br>*(Google Play Distribution)* | Google LLC | Global in-app purchases and license restoration | Purchase token, Order ID, anonymized Google account identifier | [Google Privacy Policy](https://policies.google.com/privacy) |
-| **Firebase Analytics** | Google LLC | Crash stack diagnostics and application stability analysis | Anonymous instance ID, crash stack traces, OS release | [Firebase Privacy Policy](https://firebase.google.com/support/privacy) |
+| SDK Name | Provider | Purpose | Scenario | Sharing Method | Data Processed | Privacy Policy / Official Documentation |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Alipay Client SDK**<br>*(Domestic Distribution)* | Ant Group Co., Ltd. | Secure payment processing, Alipay authorization (restore/redeem), and anti-fraud payment risk control | When purchasing, restoring purchases, redeeming codes, or initializing payment checks after Policy acceptance | Collected locally by SDK | **`Android_ID`**, **`Sensor Information`** (sensor list and motion/environment sensor readings), device model, OS parameters, network state, Wi-Fi state (BSSID/SSID), MAC address, specific payment app installation state | [Alipay Privacy Policy](https://opendocs.alipay.com/open/54/01g6qm) |
+| **Google Play Billing**<br>*(Google Play Distribution)* | Google LLC | Global in-app purchases, order verification, and license restoration | When purchasing or syncing Google Play entitlement status | Collected and transmitted by SDK | Purchase token, Order ID, anonymized Google account identifier | [Google Privacy Policy](https://policies.google.com/privacy) |
+| **Firebase Analytics** | Google LLC | Analyzing screen views, feature usage durations, Pro tier distribution, import/share counts, and runtime compatibility | On app launch and foreground usage after user accepts this Policy | Collected and transmitted by SDK | **`Android_ID`**, app instance ID, device model, OS release, app version, de-identified in-app event counts (excluding audio data and third-party package names) | [Firebase Privacy Policy](https://firebase.google.com/support/privacy) |
 
-Apart from the indispensable SDKs listed above for payment and crash analytics, **we do not sell, share, transfer, or publicly disclose personal data to any external parties.**
+Apart from the indispensable SDKs listed above for payment and analytics and the developer's order verification backend, **we do not sell, share, transfer, or publicly disclose personal data to any unrelated external parties.**
 
 ---
 
-### 3. Data Storage & Security Measures
+### 3. Data Storage, Cross-Border Transfer & Security Measures
 
-1. **Storage Location**: Data collected within the operational scope in Mainland China is hosted domestically. For crash diagnostics handled via Google Firebase, de-identified diagnostics logs may be processed across secure Google server infrastructure globally.
+1. **Storage Location & Cross-Border Transfer**: Order verification tokens collected for domestic operations are stored on the corresponding verification infrastructure. Because we use Firebase Analytics provided by Google LLC for app telemetry, **de-identified in-app event counts, basic device model, OS version, and `Android_ID` / app instance identifiers may be transmitted over HTTPS/TLS encryption to Google LLC servers located outside Mainland China** (advertising identifier collection is disabled). If you decline or withdraw consent, such collection and transmission cease immediately.
 2. **Retention Period**: We retain information only for the minimum duration strictly necessary to fulfill the service objectives (e.g., active purchase tokens are maintained throughout the service lifecycle).
 3. **Security Protection**: We implement industry-standard protective safeguards, including Android app sandbox isolation and mandatory HTTPS/TLS cryptographic protocols for all remote network transmissions, ensuring protection against unauthorized interception or data breach.
 
 ---
 
-### 4. Your Rights (Access, Deletion, and Revocation)
+### 4. Your Rights (Access, Withdrawal, Deletion, and Revocation)
 
-1. **Permission Revocation**: You may revoke permissions (`RECORD_AUDIO`, notifications, etc.) at any time via Android "Settings > Apps > Permissions". Revoking permissions disables dependent DSP features without impacting unaffected operations.
-2. **Data Erasure**: Because the Application maintains no server-side user accounts, all EQ configurations, impulse response files, and custom presets reside exclusively in local device storage. You can permanently erase all local application state by selecting "Clear Storage / Clear Cache" in Android system settings or by uninstalling the Application.
-3. **Inquiries & Order Assistance**: If you have questions concerning purchase binding or require assistance regarding order records, please contact us via our official email. We will process and respond to verified inquiries within 15 business days.
+1. **Review & Consent Withdrawal**: After entering the Application, you may still view the full Terms of Service and Privacy Policy at any time from the bottom of the main screen, or tap **"Withdraw consent"** to revoke your agreement immediately. Upon withdrawal, analytics collection and active processing services stop and the Application returns to the consent prompt.
+2. **Permission Revocation**: You may revoke permissions (`RECORD_AUDIO`, notifications, etc.) at any time via Android "Settings > Apps > Permissions". Revoking permissions disables dependent DSP features without impacting unaffected operations.
+3. **Data Erasure**: Because the Application maintains no server-side user accounts, all EQ configurations, impulse response files, and custom presets reside exclusively in local device storage. You can permanently erase all local application state by selecting "Clear Storage / Clear Cache" in Android system settings or by uninstalling the Application.
+4. **Inquiries & Order Assistance**: If you have questions concerning purchase binding or require assistance regarding order records, please contact us via our official email. We will process and respond to verified inquiries within 15 business days.
 
 ---
 

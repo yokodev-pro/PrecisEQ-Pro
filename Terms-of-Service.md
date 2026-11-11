@@ -9,7 +9,7 @@
 # 用户服务与许可协议
 
 **版本生效日期：** 2026年1月15日  
-**最近更新日期：** 2026年11月10日  
+**最近更新日期：** 2026年11月11日  
 **开发者：** yokodev  
 
 ---
@@ -57,9 +57,9 @@
 
 1. **本地化音频处理**：**本应用对所有音频信号的 DSP、均衡、卷积及空间音频运算均 100% 在用户设备本地即时处理完成。本应用绝不录音、绝不离线保存、绝不上演、分析或上传用户的任何音频流、通话记录或隐私数据。**
 2. **有限的联网范围**：本应用的联网行为仅限于以下必要场景：
-   * 校验支付订单状态及激活高级版权益；
+   * 校验支付订单状态、经用户授权的恢复购买、兑换码核销及激活高级版权益；
    * 从指定的公开合规在线仓库拉取/更新耳机与设备的校准曲线数据；
-   * 必要的应用版本更新检测与关键错误日志上报。
+   * 在用户同意《隐私政策》后，采集去标识化的应用基础运行环境及功能使用计数统计（不含用户音频、自定义预设内容及分享目标第三方应用信息）。
 3. **关于隐私政策**：有关个人信息处理的具体规则与权限调用详情，请参阅与本协议同等法律效力的《隐私政策》。
 
 ---
@@ -108,7 +108,7 @@
 # End User License Agreement & Terms of Service
 
 **Effective Date:** January 15, 2026  
-**Last Updated:** November 10, 2026  
+**Last Updated:** November 11, 2026  
 **Developer:** yokodev  
 
 ---
@@ -156,9 +156,9 @@ If you are under 18 years of age, please read this Agreement in the presence of 
 
 1. **100% Local On-Device Audio Processing**: **All digital signal processing, equalization, convolution, and spatial audio filtering are performed strictly in real-time on your local device. The Application NEVER records, caches, transmits, or analyzes any user audio streams, microphones, voice calls, or private audio data.**
 2. **Limited Network Communications**: Network requests are strictly limited to the following essential scenarios:
-   * Validating order purchase tokens and activating Pro entitlements;
+   * Validating order purchase tokens, user-authorized purchase restoration, code redemption, and activating Pro entitlements;
    * Fetching and updating publicly available headphone/target compensation curves from verified remote repositories;
-   * Performing essential application update checks and critical crash error logging.
+   * Collecting de-identified runtime environment telemetry and feature usage counts after user acceptance of the Privacy Policy (excluding user audio, custom preset values, and third-party share target app info).
 3. **Privacy Policy**: For full details regarding data practices and system permission handling, please review our [Privacy Policy](#english), which carries equal legal validity with this Agreement.
 
 ---
